@@ -1,16 +1,15 @@
+import io
+
 html = """
-<!DOCTYPE html>
 <html>
 <head>
 <title>Пример HTML-страницы</title>
 </head>
 <body>
 <h1>Привет, мир!</h1>
-<p>Это пример HTML-страницы, созданной с помощью Python.</p>
 </body>
 </html>
 """
 
-# Записываем HTML-код в файл
-with open("index.html", "w") as file:
-    file.write(html)
+with io.open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html)
